@@ -1,0 +1,191 @@
+<!-- 22120123 - Long Nguyen - Practical 15:00 -> 17:00 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Form</title>
+    <link rel="stylesheet" href="../css/week6Styles.css">
+</head>
+<body>
+    <h1><em>Welcome to the Form Tester</em></h1>
+    
+    <p>&nbsp;</p>
+    
+    <p>For any "get" form data entry<br></p>
+    
+    <table>
+        <tbody>
+            <tr>
+                <td>element</td>
+                <td>value</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p><br>For any "post" form data entry </p>
+    
+    <table>
+        <tbody>
+            <tr>
+                <td>element name</td>
+                <td>value </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2 ><em>Quote Form</em></h2>
+    <form action="https://twaaut.cdms.westernsydney.edu.au/twainfo/form.asp" method="post" class="form">
+
+        <div class="quoteDetails">
+            <h3>Quote Details</h3>
+
+            <div class="quoteDate">
+                <label for="quoteDate">Date of Quote:</label>
+                <input type="text" id="quoteDate" name="quoteDate" readonly>
+            </div>
+            <br>
+            <div class="salesperson">
+                <p class="title">Quoted by:</p>
+                
+                <label for="staffno">Staff No.:</label>
+                <input type="text" id="staffno" name="staffno">
+                <br><br>
+                <label for="staffname">Name:</label>
+                <input type="text" id="staffname" name="staffname">                
+            </div>
+
+        </div>
+        
+        <div class="custDetails">
+            <h3>Customer Details</h3>
+
+            <label for="title" class="title">Title:</label>
+            <select id="title" name="title" class="title-select">
+                <option>None</option>
+                <option>Dr</option>
+                <option>Mx</option>
+                <option>Ms</option>
+                <option>Miss</option>
+                <option>Mrs</option>
+                <option>Mr</option>
+                <option>Rev</option>
+                <option>Hon</option>
+            </select>
+            
+            <p class="title">Personal Details</p>
+            <div class="column">
+                <label for="fname" class="fname">First Name:</label>
+                <input type="text" id="fname" name="fname">
+                <br><br>
+                <label for="lname" class = "lname">Surname:</label>
+                <input type="text" id="lname" name="lname" class="required" onblur="checkEmptyInput(this);">
+            </div>
+            
+            <p class="title">Address Details</p>
+            <div class="column">
+                <label for="address" class = "address">Street Address:</label>
+                <input type="text" id="address" name="address">
+                <br><br>
+                <label for="suburb" class="suburb">Suburb:</label>
+                <input type="text" id="suburb" name="suburb">
+                <br><br>
+                <label for="postcode" class="postcode">Postcode:</label>
+                <input type="text" id="postcode" name="postcode">
+            </div>
+
+            <p class="title">Contact Details</p>
+            <div class="column">
+                <label for="phone" class="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" class="required" onblur="checkEmptyInput(this);">
+                <br><br>
+                <label for="email" class="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </div>
+        </div>
+        
+        <div class="prodDetails">
+            <h3>Product Details</h3>
+            <table>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Line Total</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="product1_id" id="product1_id"></td>
+                    <td><input type="text" name="product1_desc" id="product1_desc"></td>
+                    <td><input type="text" name="product1_qty" id="product1_qty"></td>
+                    <td><input type="text" name="product1_price" id="product1_price"></td>
+                    <td><input type="text" name="product1_total" id="product1_total" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="product2_id" id="product2_id"></td>
+                    <td><input type="text" name="product2_desc" id="product2_desc"></td>
+                    <td><input type="text" name="product2_qty" id="product2_qty"></td>
+                    <td><input type="text" name="product2_price" id="product2_price"></td>
+                    <td><input type="text" name="product2_total" id="product2_total" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="product3_id" id="product3_id"></td>
+                    <td><input type="text" name="product3_desc" id="product3_desc"></td>
+                    <td><input type="text" name="product3_qty" id="product3_qty"></td>
+                    <td><input type="text" name="product3_price" id="product3_price"></td>
+                    <td><input type="text" name="product3_total" id="product3_total" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="product4_id" id="product4_id"></td>
+                    <td><input type="text" name="product4_desc" id="product4_desc"></td>
+                    <td><input type="text" name="product4_qty" id="product4_qty"></td>
+                    <td><input type="text" name="product4_price" id="product4_price"></td>
+                    <td><input type="text" name="product4_total" id="product4_total" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="product5_id" id="product5_id"></td>
+                    <td><input type="text" name="product5_desc" id="product5_desc"></td>
+                    <td><input type="text" name="product5_qty" id="product5_qty"></td>
+                    <td><input type="text" name="product5_price" id="product5_price"></td>
+                    <td><input type="text" name="product5_total" id="product5_total" readonly></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class = "instDetails">
+            <h3>Installation Details</h3>
+            <div class="installNotes">
+                <p>Installation Notes: <textarea id="installNotes" name="installNotes"></textarea></p>
+            </div>
+            
+            <div class="installDate">
+                <label for="installDate">Requested Installation Date:</label>
+                <input type="date" id="installDate" name="installDate">
+            </div>
+        </div>
+
+        <div class="payDetails">
+            <h3>Payment Details</h3>
+            <label for="subtotal">Subtotal:</label>
+            <input type="text" id="subtotal" name="subtotal" readonly>
+            <br><br>
+            <label for="gst">GST:</label>
+            <input type="text" id="gst" name="gst" readonly>
+            <br><br>
+            <label for="total">Total:</label>
+            <input type="text" id="total" name="total" readonly>
+            <br><br>
+            <label for="depositPaid">Deposit Paid:</label>
+            <input type="text" id="depositPaid" name="deposit">
+            <br><br>
+            <label for="totalDue">Total Due:</label>
+            <input type="text" id="totalDue" name="totalDue" readonly>
+        </div>
+        <br>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <script src="../javascript/week6validation.js"></script>
+</body>
+</html>

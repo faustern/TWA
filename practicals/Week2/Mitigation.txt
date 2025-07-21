@@ -1,0 +1,41 @@
+<!-- The content for this document was sourced from
+https://www.cyber.gov.au/sites/default/files/2024-01/Engaging%20with%20Artificial%20Intelligence%20%28AI%29.pdf
+on 05/02/2025 and is used for educational purposes only. -->
+
+Engaging with Artificial Intelligence|Mitigation considerations for organisations
+
+Australian Signals Directorate
+IMAGE[Cyber_Security.jpg | Cyber Security Centre logo | 200 | 100]
+
+Engaging with Artificial Intelligence (AI)
+LINK[Introduction | index.html | current tab]
+LINK[Challenges when engaging with AI | Challenges.html | current tab]
+LINK[Mitigation considerations for organisations | bookmark on current page | current tab]
+
+Mitigation considerations for organisations
+
+AI technologies are distinctive in their speed of innovation and scope of impact. As a result, it is important that organisations that use, or are considering using, AI systems, consider their cyber security implications. This includes evaluating the AI system’s benefits and risks within the organisation’s context. The questions below are intended to prompt organisations to consider how they can use AI systems securely. They include a number of cyber security mitigations that may be relevant to their use of both their self-hosted AI systems and third-party AI systems. As an emerging technology, there are limited regulations to ensure AI systems are secure. In the absence of a robust regulatory framework, it is important organisations carefully consider the risks associated with any AI system they are considering using. As AI is evolving quickly, the below mitigation considerations may need to be revisited on an ongoing basis.
+
+Has your organisation implemented the cyber security frameworks relevant to its jurisdiction?
+
+Your organisation’s AI systems would benefit from many of the same cyber security mitigations that you have implemented to protect your organisation’s other systems. Start by ensuring that you have implemented the cyber security mitigations recommended in the framework that is relevant to your jurisdiction. The “Further Reading” section below includes links to several cyber security frameworks developed by the authors of this publication.
+
+How will the system affect your organisation’s privacy and data protection obligations?
+
+Consider how the AI system collects, processes and stores data, and how this may impact your organisation’s privacy and data protection obligations.
+- AI systems are often hosted in the cloud and may send data between different regions. Ensure that any AI system your organisation uses can meet your data residency or sovereignty obligations.
+- If using a third-party AI system, understand if your organisation’s inputs will be used to retrain the AI system’s model. Consider using private versions of the system, if available.
+- If using a third-party AI system, ensure your organisation is aware of how your data will be managed in the event your commercial agreement with the third-party ends. This information is typically outlined in the vendor’s privacy policy or terms of service.
+- If your AI system handles private data, consider if there are privacy enhancing technologies you can employ to protect that data.
+
+Does your organisation enforce multi-factor authentication?
+
+Require phishing-resistant multi-factor authentication, for example, FIDO2 security keys, to access your organisation’s AI systems, including any repositories that hold training data. Multi-factor authentication protects against unauthorised access to your organisation’s systems and resources. Unauthorised access could facilitate several attacks including data poisoning and model theft.
+
+How will your organisation manage privileged access to the AI system?
+
+Grant privileges based on the need-to-know principle and the principle of least privilege. For example, limit the number of accounts with access to the AI’s development and production environments and limit access to repositories that hold the AI model’s training data. Require that privileged accounts are routinely revalidated and disabled after a set period of inactivity. Restricting privileged access to the system mitigates several threats, including data poisoning and model theft.
+
+For more information, or to report a cyber security incident, contact us:
+LINK[cyber.gov.au | https://cyber.gov.au | new tab] | 1300 CYBER1 (1300 292 371).
+IMAGE[Cyber_Security.jpg | Cyber Security Centre logo | 200 | 100]

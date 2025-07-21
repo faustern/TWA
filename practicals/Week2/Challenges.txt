@@ -1,0 +1,37 @@
+<!-- The content for this document was sourced from
+https://www.cyber.gov.au/sites/default/files/2024-01/Engaging%20with%20Artificial%20Intelligence%20%28AI%29.pdf
+on 05/02/2025 and is used for educational purposes only. -->
+
+Engaging with Artificial Intelligence|Challenges when engaging with AI
+
+Australian Signals Directorate
+IMAGE[Cyber_Security.jpg | Cyber Security Centre logo | 200 | 100]
+
+Engaging with Artificial Intelligence (AI)
+LINK[Introduction | index.html | current tab]
+LINK[Challenges when engaging with AI | bookmark on current page | current tab]
+LINK[Mitigation considerations for organisations | Mitigation.html | current tab]
+
+Challenges when engaging with AI
+
+Some common AI related threats are outlined below. These threats are not presented to dissuade AI use, but rather to assist all AI stakeholders to engage with AI securely. Cyber security mitigations that can be used to secure against these AI threats are covered in a later section of this publication. For more information on AI-specific threats, adversary tactics and how they can be risk-managed visit MITRE ATLAS and the US National Institute of Standards and Technology’s (NIST) AI Risk Management Framework.
+
+Data Poisoning of an AI Model
+NIST outlines that the data-driven approach of machine learning introduces security and privacy challenges that are different from other systems (see NIST’s Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations). These challenges include the potential for manipulation of training data and exploitation of model vulnerabilities (also known as adversarial AI), which can adversely affect the performance of machine learning tools and systems.
+
+One method of adversarial manipulation is data poisoning. Data poisoning involves manipulating an AI model’s training data so that the model learns incorrect patterns and may misclassify data or produce inaccurate, biased or malicious outputs. Any organisational function that relies on the integrity of the AI system’s outputs could be negatively impacted by data poisoning. An AI model’s training data could be manipulated by inserting new data or modifying existing data; or the training data could be taken from a source that was poisoned to begin with. Data poisoning may also occur in the model’s fine-tuning process. An AI model that receives feedback to determine if it has correctly performed its function could be manipulated by poor quality or incorrect feedback.
+
+Case Study: Tay Chatbot Poisoning
+In 2016, Microsoft trialled a Twitter chatbot called “Tay” that leveraged machine learning. The chatbot used its conversations with users to train itself and adapt its interactions, leaving it vulnerable to a data poisoning attack. Users tweeted abusive language at Tay with the intention of inserting abusive material into Tay’s training data therefore poisoning the AI model when it was retrained. As a result, Tay began using abusive language towards other users.
+
+Input manipulation attacks – Prompt injection and adversarial examples
+Prompt injection is an input manipulation attack that attempts to insert malicious instructions or hidden commands into an AI system. Prompt injection can allow a malicious actor to hijack the AI model’s output and jailbreak the AI system. In doing so, the malicious actor can evade content filters and other safeguards restricting the AI system’s functionality.
+
+Case Study: DAN prompt injection
+A widely reported example of prompt injection leading to jailbreaking an AI system is the “Do Anything Now” (DAN) prompt. Users of ChatGPT have discovered various ways to prompt ChatGPT to assume an identity named “DAN” that is not subject to the system’s usual safety restrictions. OpenAI’s efforts to address this case of prompt injection have been bypassed on several occasions by new iterations of the DAN prompt, highlighting the challenges of enforcing safety restrictions on AI systems.
+
+Another type of input manipulation attack is known as ‘adversarial examples’. In the context of AI, adversarial examples are the crafting of specialised inputs that, when given to an AI, intentionally cause it to produce incorrect outputs, such as misclassifications. Inputs can be crafted to pass a confidence test, return an incorrect result or bypass a detection mechanism. Note that, in adversarial examples, inputs to the AI are manipulated while it is in use, rather than when it is being trained. For example, consider a music sharing service that requires user submitted music to pass an AI powered copyright check before it is published. In an adversarial example attack, a user might slightly speed up a copyright protected song so that it passes the AI powered copyright check while remaining recognisable to listeners.
+
+For more information, or to report a cyber security incident, contact us:
+LINK[cyber.gov.au | https://cyber.gov.au | new tab] | 1300 CYBER1 (1300 292 371).
+IMAGE[Cyber_Security.jpg | Cyber Security Centre logo | 200 | 100]

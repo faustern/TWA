@@ -1,0 +1,82 @@
+/* 22120123 - Long Nguyen - Practical 15:00 -> 17:00 */
+
+body {
+    border: 0;
+    box-sizing: border-box;
+    background-color: #b0c4de;
+    font: Helvetica;
+    color: black;
+    font-size: 100%;
+}
+
+table, td {
+    border: 1px solid;
+}
+
+h1 {
+    color: midnightblue;
+    font: Georgia;
+    text-align: center;
+}
+
+h2 {
+    color: midnightblue;
+    font: Georgia;
+    text-align: center;
+}
+
+h3 {
+    color: midnightblue;
+    font: Georgia;
+}
+.title {
+    color: midnightblue;
+    font: Georgia;
+    font-weight: bold;
+    font-size: medium;
+}
+
+form {
+    width: 60%;
+    background-color: #f2f2f2;
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+}
+label {
+    display: inline-block;
+    width: 35%;
+}
+
+input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+}
+
+tr {
+    text-align: center;
+}
+
+textarea {
+    width: 60%;
+    padding: 10px;
+    margin-left: 200px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.required {
+    background-color: #b0c4de;
+}
+
+.title-select{
+    background-color: #b0c4de;  
+}
+
+.btn {
+    width: auto;
+    background-color: midnightblue;
+    color: white;
+}

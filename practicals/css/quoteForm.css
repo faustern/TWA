@@ -1,0 +1,172 @@
+/* 22120123 - Long Nguyen - Practical 15:00 -> 17:00 */
+
+/* Form */
+.form {
+    border: 2px black solid;
+    background-color: rgb(186, 207, 234);
+    padding-bottom: 22px;
+    border-radius: 20px;
+}
+
+table, td {
+    border: 1px solid;
+}
+
+select {
+    border: none;
+    border: 1px black solid;
+    border-radius: 10px;   
+}
+
+input {
+    border: none;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+textarea {
+    border: none;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.form div {
+    margin-left: 10px;
+}
+
+/* Quote Details */
+.quoteDetails{
+    align-items: center;
+    overflow: hidden;
+}
+
+.quoteDate{
+    float: left;
+    margin-right: 5px;
+    padding-left: 15vh;
+}
+
+.quoteDate input{
+    text-align: center;
+    padding: 2px;
+}
+
+.salesperson{
+    float: left;
+    margin-right: 5px;
+    padding-left: 15vh;
+}
+
+/* Customer Details */
+.title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 13vh;
+} 
+
+.title-select {
+    margin-left: 20vh;
+}
+
+.custDetails {
+    overflow: hidden;
+    display: grid;
+}
+
+select {
+    width: 3%;
+}
+
+.column{
+    padding-left: 15vh;
+}
+
+.column input{
+    margin: 10px;
+}
+
+.fname {
+    margin-left: 21px;
+}
+
+.suburb {
+    margin-left: 11px;
+}
+
+.phone {
+    margin-left: 53px;
+}
+
+.email {
+    margin-left: 20px;
+}
+
+/* Product Details */
+.prodDetails table {
+    border: 1px black solid;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.prodDetails td input {
+    border-radius: 0;
+    margin: -3px;
+}
+
+/* Installation Details */
+.instDetails{
+    overflow: hidden;
+    display: grid;
+}
+
+.installNotes{
+    padding-bottom: 15px;
+}
+
+.installNotes textarea{
+    width: 20%;
+}
+
+.installDate input{
+    text-align: center;
+    padding: 2px;
+}
+
+/* Payment Details */
+.payDetails {
+    display: grid;
+    width: 20%;
+}
+
+.payDetails label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.payDetails input {
+    height: 40px;
+}
+
+/* Submit */
+.btn {
+    background-color: cornflowerblue;
+    border: none;
+    margin-left: 14vh;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px black solid;
+    border-radius: 12px;
+}
+
+.btn:hover {
+    background-color: blue;
+    border: none;
+    margin-left: 14vh;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px black solid;
+    border-radius: 12px;
+    cursor: pointer;
+}

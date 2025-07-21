@@ -1,0 +1,101 @@
+/* 22120123 - Long Nguyen - Practical 15:00 -> 17:00 */
+
+/* Document */
+body {
+    background-color: white;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 100%;
+    color: black;
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+a {
+    color: #00b3b3;
+}
+
+/* Header */
+.header {
+    border-bottom: black solid 1px;
+    overflow: hidden;
+}
+
+.header h1 {
+    font-size: 400%;
+}
+
+.header h2 {
+    font-size: 200%;
+}
+
+.header img {
+    float: right;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    float: left;
+}
+
+.header li a {
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.header li a:hover {
+    background-color: #006666;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    border-top: black solid 1px;
+    overflow: hidden;
+    font-size: 80%;
+    text-align: center;
+}
+
+/* Main Body */
+.main-body h3 {
+    text-transform: capitalize;
+    font-size: 300%;
+    color: #006666;
+}
+
+.main-body h4 {
+    color: #006666;
+}
+
+.main-body ul {
+    line-height: 2;
+}
+
+.main-body ol {
+    margin-bottom: 30px;
+}
+
+.main-body em {
+    font-size: 120%;
+    font-weight: bold;
+    color: #00b3b3;
+    margin-top: 50px;
+}
+
+/* Case Studies */
+.case-study {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: #00b3b3 solid 2px;
+    border-radius: 20px;
+}
